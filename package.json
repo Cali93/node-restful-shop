@@ -1,0 +1,22 @@
+{
+  "name": "restful-shop",
+  "version": "1.0.0",
+  "description": "A Node.js RESTful API Project (simple shop)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cali93/node-restful-shop.git"
+  },
+  "author": "Cali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cali93/node-restful-shop/issues"
+  },
+  "homepage": "https://github.com/Cali93/node-restful-shop#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
