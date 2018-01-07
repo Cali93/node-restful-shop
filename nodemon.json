@@ -1,5 +1,6 @@
 {
   "env":{
-    "MONGO_ATLAS_PW":"CaliDev"
+    "MONGO_ATLAS_PW":"CaliDev",
+    "JWT_KEY": "wtfisthat"
   }
 }
