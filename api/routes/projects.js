@@ -9,10 +9,10 @@ router.get("/", checkAuth, ProjectsController.get_all_projects);
 
 router.post("/", checkAuth, ProjectsController.create_project);
 
-// router.get("/:projectId", checkAuth, ProjectsController.get_project);
+router.get("/:projectId", checkAuth, ProjectsController.get_project);
 
-// router.patch("/:projectId", checkAuth, ProjectsController.update_project);
+router.patch("/:projectId", checkAuth, ProjectsController.update_project);
 
-// router.delete("/:projectId", checkAuth, ProjectsController.delete_project);
+router.delete("/:projectId", checkAuth, ProjectsController.delete_project);
 
 module.exports = router;

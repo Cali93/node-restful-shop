@@ -7,6 +7,34 @@ const passport = require('passport');
 
 const User = require("../models/user");
 
+
+// exports.get_user = (req, res, next) => {
+//   const id = req.params.userId;
+//   User.findById(id)
+//     .select('email username password name')
+//     .exec()
+//     .then(doc => {
+//       console.log("From database", doc);
+//       if (doc) {
+//         res.status(200).json({
+//             user: doc,
+//             request: {
+//                 type: 'GET',
+//                 url: 'http://localhost:3000/user/'
+//             }
+//         });
+//       } else {
+//         res
+//           .status(404)
+//           .json({ message: "No valid entry found for provided ID" });
+//       }
+//     })
+//     .catch(err => {
+//       console.log(err);
+//       res.status(500).json({ error: err });
+//     });
+// }
+
 exports.user_signup = (req, res, next) => {
   let newUser = new User({
     name: req.body.name,

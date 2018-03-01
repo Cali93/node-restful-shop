@@ -14,6 +14,8 @@ router.get('/profile', passport.authenticate('jwt', {
   });
 });
 
+// router.get("/:userId", UserController.get_user)
+
 router.post("/signup", UserController.user_signup);
 
 router.post("/login", UserController.user_login);
